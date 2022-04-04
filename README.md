@@ -1,4 +1,4 @@
-# FoxServer
+# FoxServer (1.18.2)
 
 ### 稍安勿躁, 狐端正在开发中..
 开发组正在将CraftBukkit补丁应用到Forge, 这一步完成后将开放测试
