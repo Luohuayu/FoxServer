@@ -1,14 +1,14 @@
 # FoxServer (1.18.2)
 
 ### 稍安勿躁, 狐端正在开发中..
-开发组正在将CraftBukkit补丁应用到Forge, 这一步完成后将开放测试
+你可以参与开发或测试, 为项目作出贡献 ([分支: 1.18.2-dev](https://github.com/Luohuayu/FoxServer/tree/1.18.2-dev))
 
-点击右上角Watch按钮, 你将在发布的第一时间获得通知
+点击右上角Watch按钮, 你将获得开发进度通知
 
 ### Don't be restless, FoxServer is in development..
-We development team is applying CraftBukkit patch to Forge, and it will be public for testing after this step is completed.
+You can contribute to the project by join in development or testing. ([Branch: 1.18.2-dev](https://github.com/Luohuayu/FoxServer/tree/1.18.2-dev))
 
-Click the Watch button, and you will be notified as soon as it is released.
+Click the Watch button, and you will be notified of development progress.
 
 ### 其他版本 (Other Version)
 [CatServer](https://github.com/Luohuayu/CatServer) (1.12.2)<br>
