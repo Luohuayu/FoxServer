@@ -1,34 +1,63 @@
 # FoxServer (1.18.2)
 
-### 稍安勿躁, 狐端正在开发中..
-你可以参与开发或测试, 为项目作出贡献 ([分支: 1.18.2-dev](https://github.com/Luohuayu/FoxServer/tree/1.18.2-dev))
+![](pic.jpg)
 
-点击右上角Watch按钮, 你将获得开发进度通知
+### 稍安勿躁, 狐端正在开发中.. (Don't be restless, FoxServer is in development..)
+你可以参与开发或测试, 为项目作出贡献 ([分支: 1.18.2-dev](https://git.rbqcloud.cn/Luohuayu/FoxServer/src/branch/1.18.2-dev))
 
-### Don't be restless, FoxServer is in development..
-You can contribute to the project by join in development or testing. ([Branch: 1.18.2-dev](https://github.com/Luohuayu/FoxServer/tree/1.18.2-dev))
+You can contribute to the project by join in development or testing. ([Branch: 1.18.2-dev](https://git.rbqcloud.cn/Luohuayu/FoxServer/src/branch/1.18.2-dev))
 
-Click the Watch button, and you will be notified of development progress.
+### 如何获取源码? (How to get the source code?)
+你可以从我们的Git获取源码: [https://git.rbqcloud.cn/Luohuayu/FoxServer](https://git.rbqcloud.cn/Luohuayu/FoxServer)
 
-### Не турбуйтеся, FoxServer знаходиться в розробці.
-Ви можете зробити свій внесок у проект, приєднавшись до розробки або тестування. ([Гілка: 1.18.2-dev](https://github.com/Luohuayu/FoxServer/tree/1.18.2-dev))
+You can get the source code from our Git: [https://git.rbqcloud.cn/Luohuayu/FoxServer](https://git.rbqcloud.cn/Luohuayu/FoxServer)
 
-Натисніть кнопку "Дивитись" або "Watch" -> "All activity", і ви будете повідомлені про хід розробки.
+### 如何构建和开发? (How to build and develop?)
+步骤:
 
-### Не беспокойтесь, FoxServer находится в разработке..
-Вы можете внести свой вклад в проект, присоединившись к разработке или тестированию. ([Ветвь: 1.18.2-dev](https://github.com/Luohuayu/FoxServer/tree/1.18.2-dev))
+1. 克隆源码: `git clone https://git.rbqcloud.cn/Luohuayu/FoxServer.git`, 然后切换到项目目录: `cd FoxServer`
+2. 初始化项目: `gradlew setup`, 然后你就可以在IDEA里打开项目了
+3. 生成补丁文件 (如果你修改了Minecraft代码): `gradlew genPatches`
+4. 构建项目: `gradlew build`
+5. 文件将生成在: `(项目目录)/projects/forge/build/libs/`
 
-Нажмите кнопку «Смотреть» или же «Watch» -> «All activity», и вы будете уведомлены о ходе разработки.
+如果你需要贡献代码，使用git commit并生成补丁，上传到 [Issues](https://github.com/Luohuayu/FoxServer/issues)
 
-### Nie martw się, FoxServer jest w fazie rozwoju..
-Możesz przyczynić się do projektu, dołączając do programowania lub testowania. ([Oddział: 1.18.2-dev](https://github.com/Luohuayu/FoxServer/tree/1.18.2-dev))
 
-Kliknij przycisk „Obserwuj”, a zostaniesz powiadomiony o postępach w rozwoju.
+Step:
+
+1. Clone the source code: `git clone https://git.rbqcloud.cn/Luohuayu/FoxServer.git`, then into the project dir: `cd FoxServer`
+2. Setup the project: `gradlew setup`, then you can use IDEA open the project
+3. Generate patches file (If you change Minecraft code): `gradlew genPatches`
+4. Build the project: `gradlew build`
+5. The file will be generated in: `(Project-Dir)/projects/forge/build/libs/`
+
+If you need to contribute code, use git commit and generate a patch, upload it to [Issues](https://github.com/Luohuayu/FoxServer/issues)
+
+### 如何在IDEA里调试? (How to debug in IDEA?)
+运行gradle任务: `FoxServer -> forge -> Tasks -> forgegradle runs -> forge_server`
+
+然后使用IDEA调试或运行: `FoxServer:projects:forge [forge_server]` (记得修改`eula.txt`同意eula)
+
+Run gradle task: `FoxServer -> forge -> Tasks -> forgegradle runs -> forge_server`
+
+Then use IDEA to debug or run:  `FoxServer:projects:forge [forge_server]` (Remember to modify `eula.txt` to agree eula)
+
+### 为什么没有Eclipse教程? (Why is there no Eclipse introduction?)
+因为我不使用Eclipse, 你需要自己研究 (可以参考[Forge开发文档](https://mcforge.readthedocs.io/en/latest/forgedev/))
+
+I don't use Eclipse, you'll need to do your own research. (You can refer [Forge dev doc](https://mcforge.readthedocs.io/en/latest/forgedev/))
+
+### 如何获取构建? (How to get the build?)
+你可以从构建站下载: [https://cdn.ci.loliidc.cn:30011/job/FoxServer-1.18.2/](https://cdn.ci.loliidc.cn:30011/job/FoxServer-1.18.2/)
+
+You can download it from our Jenkins: [https://cdn.ci.loliidc.cn:30011/job/FoxServer-1.18.2/](https://cdn.ci.loliidc.cn:30011/job/FoxServer-1.18.2/)
+
+**提示: 当前版本构建还无法直接运行, 直到启动器开发完成**
+
+**Tip: Current version builds cannot run directly until the launcher development is complete**
 
 ### 其他版本 (Other Version)
 [CatServer](https://github.com/Luohuayu/CatServer) (1.12.2)<br>
 [LoliServer](https://github.com/Loli-Server/LoliServer) (1.16.5)<br>
 
-<br><br>
-
-![](pic.jpg)
