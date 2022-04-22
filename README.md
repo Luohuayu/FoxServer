@@ -61,3 +61,11 @@ You can download it from our Jenkins: [https://cdn.ci.loliidc.cn:30011/job/FoxSe
 [CatServer](https://github.com/Luohuayu/CatServer) (1.12.2)<br>
 [LoliServer](https://github.com/Loli-Server/LoliServer) (1.16.5)<br>
 
+### 看乐子 (See jokes)
+因为 FoxServer 使用了 Magma 的一个类 (暂时用于调试, 计划重写的), Magma 直接无脑DMCA了 FoxServer 整个项目.
+
+但是 Magma 抄袭了 CatServer 的大量代码(拥有中国版权保护中心著作权登记)我们都没说什么, 所以这次真的被惹火了, 我们直接反手把 Magma 所有版本给DMCA了.
+
+[相关链接](https://github.com/github/dmca/blob/master/2022/04/2022-04-21-guangxi-infinity.md)
+
+Sorry, my English is not good, please use a translator.
