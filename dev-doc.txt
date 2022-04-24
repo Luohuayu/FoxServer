@@ -1,0 +1,82 @@
+# 只能用np++打开, 用其他编辑器排版会乱
+
+1.7.10/1.12.2			1.16.5					1.18.2
+
+包名规则:
+
+net.minecraft.world.	net.minecraft.world.server.	net.minecraft.server.level.
+net.minecraft.block.	net.minecraft.block.		net.minecraft.world.level.block.
+net.minecraft.item.		net.minecraft.item.			net.minecraft.world.item.
+net.minecraft.entity.	net.minecraft.entity.		net.minecraft.world.entity.
+net.minecraft.nbt.		net.minecraft.nbt.			net.minecraft.nbt.	// 未改动
+
+类名规则:
+
+// 主要
+WorldServer				ServerWorld				ServerLevel
+World					World					Level
+WorldInfo				ServerWorldInfo			ServerLevelData
+ChunkProviderServer		ServerChunkProvider		ServerChunkCache
+Chunk					Chunk					LevelChunk
+ChunkPos				ChunkPos				ChunkPos	// 未改动
+EntityPlayerMP			ServerPlayerEntity		ServerPlayer
+PlayerList				PlayerList				PlayerList	// 未改动
+ResourceLocation		ResourceLocation		ResourceLocation	// 未改动
+
+// 方块和物品
+BlockGrass				GrassBlock				GrassBlock
+Block					Block					Block	// 未改动
+ItemAir					AirItem					AirItem
+Item					Item					Item	// 未改动
+ItemBlock				BlockItem				BlockItem
+
+// 动物
+EntitySheep				SheepEntity				Sheep
+EntityAnimal			AnimalEntity			Animal
+
+// 怪物
+EntityZombie			ZombieEntity			Zombie
+EntityMob				MonsterEntity			Monster
+
+// 生物
+EntityAgeable			AgeableEntity			AgeableMob
+EntityCreature			CreatureEntity			PathfinderMob
+EntityLiving			LivingEntity			LivingEntity
+
+// 其他实体
+EntityXPOrb				ExperienceOrbEntity		未找到
+EntityItem				ItemEntity				ItemEntity
+EntityFallingBlock		FallingBlockEntity		FallingBlockEntity
+
+// 基础实体
+Entity					Entity					Entity	// 未改动
+
+// 实体AI
+EntityAISwimming		SwimGoal				RandomSwimmingGoal继承RandomStrollGoal	// 1.18.2猜测
+UseItemGoal				UseItemGoal				UseItemGoal
+EntityAIBase			Goal					Goal
+
+// 网络
+NetHandlerLoginServer	ServerLoginNetHandler	ServerLoginPacketListenerImpl
+INetHandlerLoginServer	IServerLoginNetHandler	ServerLoginPacketListener
+
+NetHandlerPlayServer	ServerPlayNetHandler	ServerGamePacketListenerImpl
+INetHandlerPlayServer	IServerPlayNetHandler	ServerGamePacketListener
+
+INetHandler				INetHandler				ServerPacketListener继承PacketListener
+
+// 网络数据包
+SPacketChat				SChatPacket				ClientboundChatPacket
+CPacketChatMessage		CChatMessagePacket		ServerboundChatPacket
+
+// NBT
+NBTTagCompound			CompoundNBT				CompoundTag
+NBTTagInt				IntNBT					IntTag
+NBTPrimitive			NumberNBT				NumericTag
+NBTBase					INBT					Tag
+
+变量:
+world					level					level	// Entity
+worldInfo				levelData				levelData	// World
+chunkProvider			chunkSource				chunkSource	// World
+dimension(int)			dimension(RegistryKey)	dimension(ResourceKey)	// World
